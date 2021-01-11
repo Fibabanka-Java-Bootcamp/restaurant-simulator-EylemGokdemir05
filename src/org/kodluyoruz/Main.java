@@ -12,12 +12,12 @@ public class Main {
 
         ExecutorService executorService= Executors.newFixedThreadPool(5);
 
-        Thread chefTh=new Thread(new Chef(order,"Chef"));
-        Thread chefTh2=new Thread(new Chef(order,"Chef2"));
+        Thread chefTh=new Chef(order,"Chef");
+        Thread chefTh2=new Chef(order,"Chef2");
 
-        Thread waiterTh=new Thread(new Waiter(order,"Waiter"));
-        Thread waiterTh2=new Thread(new Waiter(order,"Waiter2"));
-        Thread waiterTh3=new Thread(new Waiter(order,"Waiter3"));
+        Thread waiterTh=new Waiter(order,"Waiter");
+        Thread waiterTh2=new Waiter(order,"Waiter2");
+        Thread waiterTh3=new Waiter(order,"Waiter3");
 
         chefTh.start();
         chefTh2.start();

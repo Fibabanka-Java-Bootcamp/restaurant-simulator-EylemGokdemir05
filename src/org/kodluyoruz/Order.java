@@ -43,7 +43,7 @@ public class Order {
         }
     }
 
-    //sipariş olma
+    //sipariş alma
     public void takeOrder(String waiter){
         synchronized (this){
             try {
