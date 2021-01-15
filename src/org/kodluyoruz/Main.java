@@ -26,7 +26,7 @@ public class Main {
         waiterTh2.start();
         waiterTh3.start();
 
-        for (int i=0; i<100; i++){
+        for (int i=0; i<20; i++){
             executorService.submit(new Customer(order,"Customer "+i));
         }
 

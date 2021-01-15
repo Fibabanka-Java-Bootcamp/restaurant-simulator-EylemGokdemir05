@@ -109,5 +109,6 @@ public class Order {
         getOrder.remove(order);
         putOrder.remove(order);
         finishOrder.remove(order);
+        System.out.println(order+ " put order");
     }
 }

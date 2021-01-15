@@ -12,6 +12,15 @@ public class Chef extends Thread{
 
     @Override
     public void run() {
-        super.run();
+        while (true){
+            try {
+                if (order.getGetOrder().containsValue(false)){
+                    order.prepareOrder(chef);
+                }
+                Thread.sleep(1000);
+            }catch (InterruptedException exception){
+                exception.printStackTrace();
+            }
+        }
     }
 }
